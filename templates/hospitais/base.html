@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="/static/css/bootstrap.css">
+<link rel="stylesheet" href="/static/css/stilo.css">
+<title>Hospitalar</title>
+</head>
+<body>
+<nav class="container navbar navbar-expand-sm bg-dark navbar-light"><!--Iniciar menu-->
+	<div class="container">
+		<button class="navbar-toggler "data-toggle="collapse" data-target="#navbarsupportedContent">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarsupportedContent">
+			<ul class="navbar-nav ml-auto mr-auto">
+				<li><a href="#" class="nav-link">Home</a></li>
+				<li><a href="#" class="nav-link">Hospitais</a></li>
+				<li><a href="#" class="nav-link">Tipos de Hospitais</a></li>
+				<li class="dropdown">
+					<a href="#" class="nav-link dropdown-toggle " data-toggle="dropdown">Gerenciar Hospitais</a>
+					<ul class="dropdown-menu">
+						<li>
+							<a href="#" class="dropdown-item">Inserir Hospitais</a>
+						</li>
+						<li class="dropdown-divider"></li>
+						<li>
+							<a href="#" class="dropdown-item">Editar Hospitais</a>
+						</li>
+						<li class="dropdown-divider"></li>
+						<li>
+							<a href="#" class="dropdown-item">Excluir Hospitais</a>
+						</li>
+					</ul>
+				</li>
+				<li><a href="#" class="nav-link">Registro</a></li>
+				<li><a href="#" class="nav-link">Logim</a></li>
+			</ul>
+		</div><!--fim collapse-->
+	</div><!--fim container-->
+</nav><!--Fim menu-->
+<main>
+	<section class="container jumbotron"><!--Iniciar Titulo-->
+		<form class="input-group">
+			<input class="form-control" type="search" placeholder="Busque aqui">
+			<button class="btn btn-primary ml-1">Pesquisar</button>
+		</form>
+	</section><!--Fim do Titulo-->
+	<section>
+		
+			{% block content %}
+
+
+			{% endblock content %}
+			
+	</section>
+
+</main>	
+	<footer class=" container mt-4 bg-danger"><!--inicio do rodapé-->
+		<div class="container d-flex justify-content-between"><!--inicio de Conteine-->
+			<span class="copy mt-4">
+				Copyright 2020
+			</span>
+
+			<ul class="mt-2 navbar incone">
+				<li><a href="https://github.com/" class="text-hide">GitHub</a></li>
+				<li><a href="https://www.google.com/" class="text-hide">Google Plus</a></li>
+				<li><a href="https://br.linkedin.com/" class="text-hide">Linkedin</a></li>
+				<li><a href="https://www.facebook.com/" class="text-hide">Facebook</a></li>
+			</ul>	
+		</div><!--fim de conteine-->	
+	</footer><!--fim do rodapé-->
+
+<script src="https://code.jquery.com/jquery-3.5.1.js"
+integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+crossorigin="anonymous"></script>
+<script type="text/javascript" src="/js/bootstrap.js"></script>
+</body>
+</html>
